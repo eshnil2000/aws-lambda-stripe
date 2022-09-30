@@ -2,7 +2,7 @@
 * Based on https://www.proud2becloud.com/how-to-create-a-serverless-payment-system-using-stripe-and-aws-lambda/
 * In IAM, Create new policy to allow role stripe-role-xxx to access secrets manager
 ***
-``xxxf656a8d-146d-422f-b79f-efcdcf05089a	Customer managed	
+```xxxf656a8d-146d-422f-b79f-efcdcf05089a	Customer managed	
 
 stripe-lambda-secrets-manager-access	Customer inline	
 ```
