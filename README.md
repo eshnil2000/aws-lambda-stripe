@@ -1,5 +1,21 @@
 # aws-lambda-stripe
 * Based on https://www.proud2becloud.com/how-to-create-a-serverless-payment-system-using-stripe-and-aws-lambda/
+*** Add layers to lambda with https://dev.to/mmascioni/using-external-python-packages-with-aws-lambda-layers-526o
+- Create virtualenv on laptop
+```
+virtualenv lambda-layers-stripe
+source lambda-layers-stripe/bin/activate
+mkdir python
+pip install -r requirements.txt --target python
+zip -r layer python/
+```
+- Contents of requirements.txt
+```
+pip
+stripe
+boto3
+```
+
 * In IAM, Create new policy to allow role stripe-role-xxx to access secrets manager
 ***
 ```xxxf656a8d-146d-422f-b79f-efcdcf05089a	Customer managed	
